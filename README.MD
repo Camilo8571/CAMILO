@@ -4,6 +4,18 @@
 
 Un formulario web simple que permite a los usuarios enviar mensajes. Incluye validaciones en tiempo real y muestra mensajes de confirmación.
 
+## 🔗 Enlaces Importantes
+
+- 📂 Repositorio: [GitHub](https://github.com/Camilo8571/CAMILO.git)
+- 🌐 Ver Demo: [GitHub Pages](https://camilo8571.github.io/CAMILO/)
+
+## ⚙️ Instalación
+
+```bash
+git clone https://github.com/Camilo8571/CAMILO
+cd CAMILO
+```
+
 ## ✨ Características
 
 - Validación de nombre (campo requerido)
@@ -18,12 +30,14 @@ Un formulario web simple que permite a los usuarios enviar mensajes. Incluye val
 - JavaScript
 - SweetAlert2 para alertas bonitas
 
-## 📁 Estructura de Archivos ```
+## 📁 Estructura de Archivos
+```
 
 CAMILO/
 ├── index.html      # Formulario principal
 ├── index.css       # Estilos personalizados
-├── index.js        # Validaciones y lógica ```
+├── index.js        # Validaciones y lógica
+```
 
 ## 💻 Cómo usarlo
 
@@ -37,11 +51,8 @@ CAMILO/
 ## ✅ Validaciones
 
 - **Nombre**: No puede estar vacío
-
 - **Email**: Debe tener formato válido (ejemplo@dominio.com)
-
 - **Mensaje**: 
-
   - Mínimo 10 caracteres
   - Máximo 200 caracteres
   - Muestra contador de caracteres
