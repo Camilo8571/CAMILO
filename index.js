@@ -50,11 +50,26 @@
         // Validación del formulario
         Array.from(forms).forEach(form => {
             form.addEventListener('submit', event => {
+                event.preventDefault();
+                
                 if (!form.checkValidity() || !validarEmail(emailInput.value)) {
-                    event.preventDefault();
                     event.stopPropagation();
+                    form.classList.add('was-validated');
+                } else {
+                    // Mostrar mensaje de éxito
+                    Swal.fire({
+                        icon: 'success',
+                        title: '¡Mensaje enviado!',
+                        text: 'Tu mensaje ha sido enviado correctamente',
+                        confirmButtonColor: '#3498db',
+                        timer: 3000,
+                        timerProgressBar: true
+                    }).then(() => {
+                        // Limpiar el formulario después de mostrar el mensaje
+                        form.reset();
+                        form.classList.remove('was-validated');
+                    });
                 }
-                form.classList.add('was-validated');
             }, false);
         });
     });
