@@ -16,8 +16,14 @@
     "url": "https://github.com/Camilo8571/CAMILO/issues"
   },
   "homepage": "https://github.com/Camilo8571/CAMILO#readme",
-  "description": "",
   "devDependencies": {
     "playwright": "^1.52.0"
-  }
+  },
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {
+    "playwright-core": "^1.52.0"
+  },
+  "description": ""
 }
